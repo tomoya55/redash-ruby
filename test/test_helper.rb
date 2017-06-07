@@ -5,7 +5,7 @@ require "pry"
 require "minitest/autorun"
 require "minitest/power_assert"
 require "minitest/reporters"
-Minitest::Reporters.use! Minitest::Reporters::ProgressReporter.new
+Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
 
 require "vcr"
 VCR.configure do |config|

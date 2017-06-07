@@ -45,7 +45,7 @@ docker exec -it redashruby_server_1 ./manage.py shell
 ```
 
 ```
-REDASH_API_TOKEN=xxx REDASH_HOSTNAME=http://localhost:28080 ruby -Ilib -Itest **/*_test.rb
+REDASH_API_TOKEN=xxx REDASH_HOSTNAME=http://localhost:28080 bundle exec rake test
 ```
 
 ## Contributing
