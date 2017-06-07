@@ -1,0 +1,5 @@
+#!/bin/bash
+
+docker-compose -f docker-compose.production.yml up
+docker exec -it redashruby_server_1 ./manage.py users create test1@example.com test --password testtest
+docker exec -it redashruby_server_1 ./manage.py ds new employees --type mysql --options '{"db": "employees", "host": "mysql", "passwd": "mysql", "user": "root"}'
